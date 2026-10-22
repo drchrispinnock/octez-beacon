@@ -1,0 +1,23 @@
+{
+  "name": "octez-beacon",
+  "version": "0.1.0",
+  "description": "Command-line Beacon / Octez Connect wallet backed by an octez-client key",
+  "license": "MIT",
+  "author": "Chris Pinnock <root@chrispinnock.com>",
+  "type": "module",
+  "bin": { "octez-beacon": "bin/octez-beacon.js" },
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node bin/octez-beacon.js",
+    "test": "node --test test/"
+  },
+  "dependencies": {
+    "@taquito/local-forging": "^25.1.0",
+    "@taquito/rpc": "^25.1.0",
+    "@taquito/taquito": "^25.1.0",
+    "@taquito/utils": "^25.1.0",
+    "@tezos-x/octez.connect-core": "^5.0.4",
+    "@tezos-x/octez.connect-types": "^5.0.4",
+    "@tezos-x/octez.connect-wallet": "^5.0.4"
+  }
+}
